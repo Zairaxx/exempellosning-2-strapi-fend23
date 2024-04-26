@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "restaurangs",
+  "info": {
+    "singularName": "restaurang",
+    "pluralName": "restaurangs",
+    "displayName": "restaurant",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "employees": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::employee.employee"
+    }
+  }
+}

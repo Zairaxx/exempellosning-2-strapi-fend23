@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "employees",
+  "info": {
+    "singularName": "employee",
+    "pluralName": "employees",
+    "displayName": "employee"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "employed_since": {
+      "type": "date"
+    },
+    "role": {
+      "type": "string"
+    },
+    "favorite_dish": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dish.dish"
+    }
+  }
+}
